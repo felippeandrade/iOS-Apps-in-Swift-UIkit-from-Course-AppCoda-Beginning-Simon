@@ -251,11 +251,50 @@ default:
 }
 // as the speed falls within the range of 41 and 70, it'll print normal to console
 
-//#Tuples
+//##Tuples
 
-//Considere que você está desenvolvendo uma chamada de método para retornar vários valores, agora você pode usar tuplas como um valor de retorno em vez de retornar um objeto personalizado.
-
+//As tuplas permitem que os desenvolvedores criem um grupo de valores e os distribuam
 //As tuplas tratam vários valores como um único valor composto.
+//você pode colocar qualquer valor de qualquer tipo dentro de uma tupla.
 
+//O código abaixo cria uma tupla que inclui: o código da ação, o nome da empresa e o preço da ação.
 let company = ("AAPL", "Apple Inc", 93.5)
 
+//Você pode decompor os valores das tuplas e usá-lo assim:
+let (stockCode, companyName, stockPrice) = company
+print("stock code = \(stockCode)")
+print("company name = \(companyName)")
+print("stock price = \(stockPrice)")
+
+//Uma maneira melhor de usar tupla é dar um nome a cada elemento na tupla e você pode acessar o valor do elemento usando a notação de ponto.
+let product = (id: "AP234", name: "iPhone X", price: 599)
+print("id = \(product.id)")
+print("name = \(product.name)")
+print("price = USD\(product.price)")
+
+//Um uso comum de tuplas é servir como um valor de retorno. Em alguns casos, você deseja retornar vários valores em um método sem usar uma classe personalizada ou em vez de retornar um objeto personalizado.
+class Store10 {
+    func getProduct(number: Int) -> (id: String, name: String, price: Int) {
+        var id = "IP435", name = "iMac", price = 1399 //outra forma de criar uma variavel
+        switch number {
+        case 1:
+            id = "AP234"
+            name = "iPhone X"
+            price = 999
+        case 2:
+            id = "PE645"
+            name = "iPad Pro"
+            price = 599
+        default:
+            break
+        }
+
+        return (id, name, price)
+    }
+}
+
+let store = Store10()
+let product10 = store.getProduct(number: 2)
+print("id = \(product10.id)")
+print("name = \(product10.name)")
+print("price = USD\(product10.price)")
