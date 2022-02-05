@@ -253,3 +253,9 @@ default:
 
 //#Tuples
 
+//Considere que você está desenvolvendo uma chamada de método para retornar vários valores, agora você pode usar tuplas como um valor de retorno em vez de retornar um objeto personalizado.
+
+//As tuplas tratam vários valores como um único valor composto.
+
+let company = ("AAPL", "Apple Inc", 93.5)
+
