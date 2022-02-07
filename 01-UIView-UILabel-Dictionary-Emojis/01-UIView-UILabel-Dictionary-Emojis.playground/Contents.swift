@@ -1,5 +1,3 @@
-//: Playground - noun: a place where people can play
-
 import UIKit
 
 var emojiDict = ["👻": "Ghost", "🤖": "Robot", "😤": "Angry", "🤓": "Nerdy", "👾": "Alien monster"]

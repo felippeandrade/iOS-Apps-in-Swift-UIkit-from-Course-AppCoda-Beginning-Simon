@@ -1,15 +1,15 @@
 import UIKit
 
-//#Chapter 1
+//##Chapter 1
 
 //As Ferramentas de Desenvolvimento, a Abordagem de Aprendizagem e a Ideia de Aplicativo
 //
 //UIKit e SwiftUI - tipos de estrutura de interface do usuário (frameworks)
 
 
-//#Chapter 2
+//##Chapter 2
 
-//##Comandos
+//#Comandos
 
 //shift+command+enter para executar o código
 
@@ -180,7 +180,7 @@ var jobTitle: String? //imprime nil //Para qualquer variável opcional sem valor
 jobTitle = "iOS Developer"
 
 
-//##Desempacotamentoforçado de opcionais
+//#Desempacotamentoforçado de opcionais
 
 //Você tem que fazer algumas verificações antes de usar a variável opcional.
 // Sempre que você precisar acessar uma variável opcional, o Xcode força você a realizar uma verificação para descobrir se a opcional possui um valor.
@@ -198,7 +198,7 @@ if jobTitle3 != nil { //Se o opcional tiver um valor, você desempacotará seu v
 }
 
 
-//##Optional Binding (opcional encadeado)
+//#Optional Binding (opcional encadeado)
 //O desempacotamento forçado é uma maneira de acessar o valor subjacente de uma variável opcional. A outra maneira é chamada de ligação opcional e é a maneira recomendada de trabalhar com opcionais.
 var jobTitle4: String?
 jobTitle4 = "xxxxx"
@@ -207,12 +207,12 @@ if let jobTitleWithValue = jobTitle4 { // valor é atribuído à constante tempo
     print(message4)
 }
 
-//Capítulo 3 //Olá Mundo! Crie seu primeiro aplicativo em Swift
+//#Chapter 3 //Olá Mundo! Crie seu primeiro aplicativo em Swift
 
 //#Criando projeto
 //Nome do produto: HelloWorld //tudo junto
 
-//##Comandos
+//#Comandos
 
 //no Mac sem retina, pode não ser possível mostrar a janela completa do simulador. Você pode selecionar o simulador e pressionar command+1 para reduzi-lo.no Mac sem retina, pode não ser possível mostrar a janela completa do simulador. Você pode selecionar o simulador e pressionar command+1 para reduzi-lo.
 
@@ -223,6 +223,7 @@ if let jobTitleWithValue = jobTitle4 { // valor é atribuído à constante tempo
 //Caso as palavras/textos estejam truncadas num label/botao, você pode redimensionar o label/botão para ajustá-lo ou pressionar command+= para deixar o Xcode redimensioná-lo para você.
 
 //#Um passo a passo rápido do Interface Builde
+// interface de usuário (storyboards)
 //O Xcode então traz um editor visual para storyboards, conhecido como Interface Builder. O editor do Interface Builder fornece uma maneira visual para você criar e projetar a interface do usuário de um aplicativo.
 
 //Since we chose to use the App template during project creation, Xcode generated a default view controller scene in the storyboard.
@@ -234,3 +235,5 @@ if let jobTitleWithValue = jobTitle4 { // valor é atribuído à constante tempo
 //A visualização Document Outline do editor Interface Builder mostra uma visão geral de todas as cenas e os objetos em uma cena específica.
 
 
+//#Chapter 4
+//Explicação do aplicativo Hello World

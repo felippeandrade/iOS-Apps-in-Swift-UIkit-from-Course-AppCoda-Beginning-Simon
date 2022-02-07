@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  HelloWorld
-//
-//  Created by Simon Ng on 9/8/2021.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
