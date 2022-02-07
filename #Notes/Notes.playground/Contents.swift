@@ -237,3 +237,57 @@ if let jobTitleWithValue = jobTitle4 { // valor é atribuído à constante tempo
 
 //#Chapter 4
 //Explicação do aplicativo Hello World
+
+//o botão que interage com você é comumente caracterizado como a interface e os detalhes internos que se escondem atrás do botão são chamados de implementação . A interface se comunica com a implementação por meio de uma mensagem.
+
+// Os objetos da interface do usuário (por exemplo, botão) se comunicam com o código por meio de mensagens.
+
+//se você voltar ao projeto Hello World, o botão que você adicionou na visualização é a interface. O showMessage(sender:)método da ViewControllerclasse é a implementação. Quando alguém toca no botão, ele envia uma mensagem showMessageWithSender para ViewController por meio da invocação do método showMessage(sender:).
+//O que acabamos de demonstrar é um dos conceitos importantes por trás da Programação Orientada a Objetos conhecido como Encapsulamento . A implementação do showMessage(sender:)método está oculta do mundo exterior (ou seja, a interface).O botão Hello World não tem ideia de como o showMessage(sender:)método funciona. Tudo o que sabe é que precisa enviar uma mensagem. O showMessage(sender:)método trata do resto exibindo uma mensagem.
+
+//Assim como o Objective-C, o Swift é uma linguagem de programação orientada a objetos (OOP). A maior parte do código em um aplicativo
+
+//No iOS, os aplicativos são baseados em programação orientada a eventos. Seja um objeto do sistema ou um objeto de interface do usuário, ele escuta determinados eventos para determinar o fluxo do aplicativo. Para um objeto de interface do usuário (por exemplo, Button), ele pode ouvir um evento de toque específico. Quando o evento é acionado, o objeto chama o método predefinido associado ao evento.
+//Abra Mainn ovamente e selecione o botão "Hello World". Clique no ícone do Inspetor de conexão na área Utilitário. Na seção Eventos enviados, você deve encontrar uma lista de eventos disponíveis e seu método correspondente para chamar. Como você pode ver na figura abaixo, o evento "Touch Up Inside" está conectado ao showMessage(sender:)método ou showMessageWithSender
+
+//No aplicativo Hello World, quando os usuários levantam o dedo dentro do botão, o evento "Touch Up Inside" é acionado. Conseqüentemente, ele chama o showMessage(sender:)método para exibir a mensagem "Hello World". Usamos o evento "Touch Up Inside" em vez de "Touch Down" porque queremos evitar um toque acidental ou falso.
+
+//#Metodos
+//Um método não precisa receber parâmetros. Nesse caso, você simplesmente escreve um par de parênteses vazio assim:
+
+func showMessage() { }
+
+//Opcionalmente, um método pode receber parâmetros como entrada. Os parâmetros são definidos entre parênteses.
+
+//Em nosso exemplo, o método aceita um sender parâmetro que possui um tipo UIButton. O sender parâmetro indica o objeto (botao) que envia a solicitação. Em outras palavras, ele informa o botão que o usuário tocou. O sender parâmetro indica o objeto que envia a solicitação. Em outras palavras, ele informa o botão que o usuário tocou.
+
+//#@IBAction
+//Essa palavra-chave permite que você conecte seu código-fonte aos objetos da interface do usuário no Interface Builder. Quando inserido na declaração do método, indica que o método pode ser exposto ao Interface Builder. É por isso que o showMessageWithSender evento apareceu em um pop-over quando você estabeleceu a conexão entre o botão Hello World e o código.
+
+//#SDK - APIs(classes e funções) - framework (UIKit)
+//Ao desenvolver aplicativos no iOS, não precisamos escrever todas as funções do zero. Digamos que você não precise aprender a desenhar a caixa de alerta na tela. O SDK do iOS, incluído no Xcode, já fornece várias funções integradas para facilitar sua vida. Essas funções geralmente são conhecidas como APIs e organizadas na forma de frameworks . O UIKit framework é apenas um deles, que fornece classes e funções para construir e gerenciar a interface de usuário do seu aplicativo. Por exemplo, UIViewController, UIButton, e UIAlertControllerrealmente vêm do UIKit framework.
+
+//Há classe ViewController (ViewController.swift)
+//Há ViewController da view do Interface Builder
+//Como eu disse antes, contamos com o iOS SDK da Apple para construir nossos aplicativos. Raramente escrevemos nosso próprio código para desenhar uma caixa de diálogo de aviso ou caixa de diálogo de mensagem para apresentar algumas mensagens na tela. Raramente desenhamos nossos próprios botões também. Em vez disso, confiamos UIAlertControllere UIButtonfazemo s o trabalho pesado. O mesmo conceito se aplica à visualização, a área retangular que apresentamos na tela para os usuários (UIViewControlleré).
+//UIViewControlleré o bloco de construção fundamental da maioria dos aplicativos iOS. Ele contém outros elementos da interface do usuário (por exemplo, botões) e controla o que exibir na tela. Por padrão, UIViewControllertem uma visão vazia. Como você testou no capítulo anterior, ele apenas exibiu uma tela em branco sem nenhuma função ou interação com os usuários. É nossa responsabilidade fornecer uma versão personalizada do UIViewController.
+//Para fazer isso, criamos uma nova classe (ie ViewController) que se estende de UIViewController. Ao estender de UIViewController, ViewControllerherda todas as suas funcionalidades.
+//Por exemplo, ele tem uma visão vazia padrão. No código, está escrito assim:
+//class ViewController: UIViewController
+//No corpo do ViewController, disponibilizamos nossas customizações.
+
+//Semelhante ao botão "Hello World" que discutimos anteriormente, a visão do controlador de visão também recebe eventos diferentes devido às mudanças de visibilidade ou estado da visão. Em um momento apropriado, o iOS chama automaticamente um método específico de UIViewController quando o estado da exibição é alterado.
+
+//#viewDidLoad
+//Quando a visualização for carregada, o viewDidLoad método será chamado automaticamente, para que você possa executar uma inicialização adicional.
+//viewDidLoadé apenas um dos métodos para gerenciar os estados da view.
+
+//Digamos que, quando um usuário clicar no botão inicial para voltar à tela inicial, os métodos viewWillDisappeare viewDidDisappearserão chamados automaticamente. Novamente, você pode fornecer sua própria personalização desses métodos para realizar operações adicionais.
+
+//#Nos bastidores do botão Executar
+//Compile – Você provavelmente acha que o iOS entende o código Swift. Na realidade, o iOS lê apenas código de máquina. O código Swift é para os desenvolvedores escreverem e lerem. Para que o iOS entenda o código-fonte do aplicativo, ele precisa passar por um processo de tradução para traduzir o código Swift em código de máquina. Este processo é referido como "compilar". O Xcode já vem com um compilador embutido para compilar o código fonte.
+//Pacote – Além do código-fonte, um aplicativo geralmente contém arquivos de recursos, como imagens, arquivos de texto, arquivos de som, etc. Todos esses recursos são empacotados para compor o aplicativo final. Costumávamos nos referir a esses dois processos como o processo de "construção".
+
+
+//#Chapter 5
+//Introduction to Auto Layout
