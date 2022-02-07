@@ -290,4 +290,33 @@ func showMessage() { }
 
 
 //#Chapter 5
-//Introduction to Auto Layout
+
+//#Comandos
+
+//Isso gira o dispositivo para o modo paisagem: você pode pressionar command+seta para a esquerda/seta para a direita para girar o dispositivo lateralmente.
+
+
+//#Introduction to Auto Layout
+//O layout automático é um sistema de layout baseado em restrições. Ele permite que os desenvolvedores criem uma interface do usuário adaptável que responda adequadamente às alterações no tamanho da tela e na orientação do dispositivo.
+//Sem usar o layout automático, a posição do botão que colocamos no storyboard é fixa. Em outras palavras, "codificamos" a origem do frmae (x,y) do botão
+//frame x = 0 - objeto fica gruado no linha esquerda
+//frame y = 0 - objeto fica gruado no linha superior
+
+//Por exemplo, se você estiver definindo a posição de um botão, você pode querer dizer "the left edge should be 30 points from the left edge of its containing view.". Isso se traduz em button.left = (container.left + 30). Felizmente, não precisamos lidar com as fórmulas. Tudo o que você precisa saber é como expressar as restrições de forma descritiva e usar o Interface Builder para criá-las.
+
+//#Usando o layout automático para centralizar o botão
+
+//O Xcode fornece duas maneiras de definir restrições de layout automático:
+
+//Barra de layout automático
+//Controle-arraste
+
+//Primeiro, começamos com a barra de layout automático. No canto inferior direito do editor do Interface Builder, você deve encontrar 5 botões. Esses botões são da barra de layout. Você pode usá-los para definir vários tipos de restrições de layout e resolver problemas de layout
+
+//Cada botão tem sua própria função:
+
+//Alinhar – Crie restrições de alinhamento, como alinhar as bordas esquerdas de duas vistas.
+//Adicionar novas restrições – Crie restrições de espaçamento, como definir a largura de um controle de interface do usuário.
+//Incorporar – Incorpore visualizações em uma visualização de pilha (ou outras visualizações). Vamos discuti-lo melhor no próximo capítulo.
+//Resolver problemas de layout automático – Resolva problemas de layout.
+//Atualizar quadros - Atualize a posição e o tamanho do quadro em referência às restrições de layout fornecidas.
