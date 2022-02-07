@@ -232,3 +232,5 @@ if let jobTitleWithValue = jobTitle4 { // valor é atribuído à constante tempo
 //Um controlador de visualização é projetado para gerenciar sua visualização e subvisualizações associadas (por exemplo, botão e rótulo).
 
 //A visualização Document Outline do editor Interface Builder mostra uma visão geral de todas as cenas e os objetos em uma cena específica.
+
+
