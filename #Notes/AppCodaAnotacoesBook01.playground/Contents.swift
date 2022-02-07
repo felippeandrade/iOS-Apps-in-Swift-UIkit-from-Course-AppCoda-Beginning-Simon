@@ -9,7 +9,11 @@ import UIKit
 
 //#Chapter 2
 
+//##Comandos
+
 //shift+command+enter para executar o código
+
+//Para digitar um caractere emoji no Mac, pressione control-command+espaço.
 
 //#String
 
@@ -109,6 +113,7 @@ default:
 
 
 //#Arrays
+//a ordem dos itens segue a ordem na inicialização
 //permite armazenar vários valores em uma variável
 //todos os valores devem ser do mesmo tipo
 
@@ -145,3 +150,61 @@ for book in bookCollection {
 
 
 //#dictionary
+//a ordem dos itens não segue a ordem na inicialização
+//Um dicionário é semelhante a um array que permite armazenar vários valores em uma variável/constante. A principal diferença é que cada valor em um dicionário está associado a uma chave. Em vez de identificar um item usando um índice, você pode acessar o item usando uma chave exclusiva.
+var bookCollectionDict2:  [String: String] = ["1328683788": "Tool of Titans", "0307463745": "Rework", "1612060919": "Authority"]
+
+//ou
+
+var bookCollectionDict = ["1328683788": "Tool of Titans", "0307463745": "Rework", "1612060919": "Authority"]
+
+
+//para acessar, usa-se chave exclusiva
+bookCollectionDict["0307463745"]
+
+//Para iterar sobre todos os itens do dicionário, você também pode usar o for-in
+for (key, value) in bookCollectionDict {
+    print("ISBN: \(key)")
+    print("Title: \(value)")
+}
+
+//#Opcionais
+//Diferentes linguagens de programação têm estratégias diferentes para encorajar os programadores a escrever um bom código ou código menos propenso a erros. A introdução de Optionals é a maneira do Swift de ajudar os programadores a escrever um código melhor, evitando assim travamentos de aplicativos.
+//Antes de acessar uma variável que pode não ter valor, o Swift recomenda que você a verifique primeiro. Você deve certificar-se de que tenha um valor antes de qualquer processamento adicional. Assim, isso pode evitar falhas no aplicativo.
+//Em algumas situações, você precisa declarar uma variável sem valor inicial. Imagine que você está desenvolvendo um aplicativo com um formulário de registro. Nem todos os campos do formulário são obrigatórios, alguns campos (por exemplo, cargo) são opcionais. Nesse caso, as variáveis ​​desses campos opcionais podem não ter valores
+//opcional é apenas um tipo em Swift. Esse tipo indica que a variável pode ter um valor ou nenhum valor.
+//você precisa especificar explicitamente o tipo de uma variável opcional (por exemplo String, , Int).
+var jobTitle: String? //imprime nil //Para qualquer variável opcional sem valor, um valor especial chamado nilé atribuído a ela. //nil é o mesmo que nao tem valor
+
+//Se você tiver que atribuir um valor a uma variável opcional, você pode fazer isso normalmente assim:
+jobTitle = "iOS Developer"
+
+
+//##Desempacotamentoforçado de opcionais
+
+//Você tem que fazer algumas verificações antes de usar a variável opcional.
+// Sempre que você precisar acessar uma variável opcional, o Xcode força você a realizar uma verificação para descobrir se a opcional possui um valor.
+//var jobTitle2: String?
+//jobTitle2 = "xxxxx"
+//var message2 = "Your job title is " + jobTitle2
+
+// Swift oferece algumas maneiras Desembrulho. Primeiro, é conhecido como instruções if e desempacotamento forçado
+
+var jobTitle3: String?
+jobTitle3 = "xxxxx"
+if jobTitle3 != nil { //Se o opcional tiver um valor, você desempacotará seu valor para processamento adicional.
+    var message3 = "Your job title is " + jobTitle3! //Quando precisar acessar o valor de jobTitle, adicione um ponto de exclamação ( !) ao final da variável opcional. Este ponto de exclamação é um indicador especial, informando ao Xcode que você garante que a variável opcional tenha um valor e que seja seguro usá-lo
+    print(message3)
+}
+
+
+//##Optional Binding (opcional encadeado)
+//O desempacotamento forçado é uma maneira de acessar o valor subjacente de uma variável opcional. A outra maneira é chamada de ligação opcional e é a maneira recomendada de trabalhar com opcionais.
+var jobTitle4: String?
+jobTitle4 = "xxxxx"
+if let jobTitleWithValue = jobTitle4 { // valor é atribuído à constante temporária jobTitleWithValue //ou: jobTitle4 = jobTitle4 // Mesmo que os nomes sejam os mesmos, na verdade existem duas variáveis ​​no código
+    var message4 = "Your job title is " + jobTitleWithValue //Como você pode ver, não há necessidade de adicionar o !sufixo.
+    print(message4)
+}
+
+//Capítulo 3 //Olá Mundo! Crie seu primeiro aplicativo em Swift
