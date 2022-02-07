@@ -208,3 +208,27 @@ if let jobTitleWithValue = jobTitle4 { // valor é atribuído à constante tempo
 }
 
 //Capítulo 3 //Olá Mundo! Crie seu primeiro aplicativo em Swift
+
+//#Criando projeto
+//Nome do produto: HelloWorld //tudo junto
+
+//##Comandos
+
+//no Mac sem retina, pode não ser possível mostrar a janela completa do simulador. Você pode selecionar o simulador e pressionar command+1 para reduzi-lo.no Mac sem retina, pode não ser possível mostrar a janela completa do simulador. Você pode selecionar o simulador e pressionar command+1 para reduzi-lo.
+
+//O simulador funciona praticamente como um iPhone real. Você pode clicar no botão home (ou pressionar shift-command-h) para abrir a tela inicial.
+
+//Se você não precisar de nenhum dos simuladores, você pode selecionar o simulador e pressionar command+w para fechá-lo.
+
+//Caso as palavras/textos estejam truncadas num label/botao, você pode redimensionar o label/botão para ajustá-lo ou pressionar command+= para deixar o Xcode redimensioná-lo para você.
+
+//#Um passo a passo rápido do Interface Builde
+//O Xcode então traz um editor visual para storyboards, conhecido como Interface Builder. O editor do Interface Builder fornece uma maneira visual para você criar e projetar a interface do usuário de um aplicativo.
+
+//Since we chose to use the App template during project creation, Xcode generated a default view controller scene in the storyboard.
+
+//Uma cena no storyboard representa um controlador de visualização e suas visualizações.
+//Ao desenvolver aplicativos iOS, as visualizações são os blocos de construção básicos para criar sua interface de usuário. Cada tipo de visualização tem sua própria função. Por exemplo, a visualização que você encontra no storyboard é uma visualização de contêiner para conter outras visualizações, como botões, rótulos, visualizações de imagens, etc.
+//Um controlador de visualização é projetado para gerenciar sua visualização e subvisualizações associadas (por exemplo, botão e rótulo).
+
+//A visualização Document Outline do editor Interface Builder mostra uma visão geral de todas as cenas e os objetos em uma cena específica.
