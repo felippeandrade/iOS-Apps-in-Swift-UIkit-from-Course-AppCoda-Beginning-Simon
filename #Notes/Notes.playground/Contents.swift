@@ -25,7 +25,7 @@ message.lowercased()
 message.count
 
 //concatenação de strings
-var greeting = "Hello "
+var greeting = "Hello"
 var name = "Simon"
 var message = greeting + name
 

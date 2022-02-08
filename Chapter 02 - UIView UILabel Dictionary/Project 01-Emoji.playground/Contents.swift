@@ -1,6 +1,6 @@
 import UIKit
 
-var emojiDict = ["👻": "Ghost", "🤖": "Robot", "😤": "Angry", "🤓": "Nerdy", "👾": "Alien monster"]
+var emojiDict = ["👻": "Ghost", "🤖": "Robot!", "😤": "Angry", "🤓": "Nerdy", "👾": "Alien monster"]
 var wordToLookup = "🤓"
 var meaning = emojiDict[wordToLookup]
 
