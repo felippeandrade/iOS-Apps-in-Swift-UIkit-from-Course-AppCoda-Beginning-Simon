@@ -295,6 +295,12 @@ func showMessage() { }
 
 //Isso gira o dispositivo para o modo paisagem: você pode pressionar command+seta para a esquerda/seta para a direita para girar o dispositivo lateralmente.
 
+//você pode pressionar command+0 para ocultar o navegador do projeto. Isso liberará mais espaço na tela para você trabalhar no design do aplicativo.
+
+//Se você quiser liberar mais espaço na tela para o painel de visualização, mantenha as teclas de comando e de opção pressionadas e pressione 0  para ocultar a área Utilitário.
+
+//quando você adiciona mais dispositivos no assistente de visualização, o Xcode pode não conseguir ajustar a visualização de todos os tamanhos de dispositivos na tela ao mesmo tempo. Se estiver usando um trackpad, você pode rolar pela visualização deslizando para a esquerda ou para a direita com dois dedos. E se você ainda estiver usando um mouse com roda de rolagem? Basta segurar a tecla shift para rolar horizontalmente.
+
 
 //#Introduction to Auto Layout
 //O layout automático é um sistema de layout baseado em restrições. Ele permite que os desenvolvedores criem uma interface do usuário adaptável que responda adequadamente às alterações no tamanho da tela e na orientação do dispositivo.
@@ -320,3 +326,28 @@ func showMessage() { }
 //Incorporar – Incorpore visualizações em uma visualização de pilha (ou outras visualizações). Vamos discuti-lo melhor no próximo capítulo.
 //Resolver problemas de layout automático – Resolva problemas de layout.
 //Atualizar quadros - Atualize a posição e o tamanho do quadro em referência às restrições de layout fornecidas.
+
+//Quando seu layout de visualização está sendo configurado corretamente e não há ambiguidade, as linhas de restrição ficam em azul.
+
+//Com base nas restrições configuradas, eles especificaram que o botão deve ser centralizado vertical e horizontalmente no contêiner (ou seja, a visualização)
+
+
+
+//#Adicionando um rótulo (label)
+
+//Os rótulos no iOS geralmente são usados ​​para exibir texto e mensagens simples.
+
+//O rótulo está a 20 pontos da margem direita da visualização.
+//O rótulo está a 20 pontos de distância da parte inferior da visualização.
+//No layout automático, nos referimos a esse tipo de restrição como restrições de espaçamento
+
+//#Área segura
+//a área segura é a visualização inteira, excluindo a barra de status.
+//A área segura é na verdade um guia de layout, representando a parte da sua visualização que não é obscurecida por barras e outros conteúdos.
+//a área segura se atualiza automaticamente quando a visualização é coberta pela barra de navegação ou outro conteúdo.
+//Se a visualização não tiver nenhuma barra de navegação ou barra de guias, a área segura será a visualização inteira, excluindo a barra de status.
+
+//#Chapter 06
+
+
+
