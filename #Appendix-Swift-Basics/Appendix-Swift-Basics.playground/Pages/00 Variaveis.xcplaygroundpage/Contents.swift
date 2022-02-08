@@ -3,7 +3,7 @@ import Foundation
 
 //#Variáveis, Constantes e Inferência de Tipos
 
-var numberOfRows = 30
+var numberOfRows = 50
 let maxNumberOfRows = 100
 
 //count is inferred to be of type Int
