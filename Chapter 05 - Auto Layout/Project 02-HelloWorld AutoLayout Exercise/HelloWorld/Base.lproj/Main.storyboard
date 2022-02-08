@@ -50,15 +50,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="UWk-aa-6Lk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="9" id="2Vy-KN-g9c"/>
                             <constraint firstItem="DII-lg-FQW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4lC-0L-UoR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UWk-aa-6Lk" secondAttribute="bottom" constant="23" id="EHh-cH-TZO"/>
                             <constraint firstItem="WCx-ZR-Dae" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FK5-RL-zPK"/>
-                            <constraint firstItem="lii-s1-1Od" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UWk-aa-6Lk" secondAttribute="trailing" constant="8" symbolic="YES" id="Gav-Kx-Y7A"/>
                             <constraint firstItem="WCx-ZR-Dae" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="Gl7-Pl-dKz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lii-s1-1Od" secondAttribute="bottom" constant="30" id="YS6-Ce-4iD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lii-s1-1Od" secondAttribute="trailing" constant="40" id="aDo-d2-Z6v"/>
-                            <constraint firstItem="UWk-aa-6Lk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="9" id="h3U-v6-5km"/>
                             <constraint firstItem="DII-lg-FQW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lnX-tx-8c7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UWk-aa-6Lk" secondAttribute="bottom" constant="23" id="wBf-Mn-u9u"/>
                         </constraints>
                     </view>
                 </viewController>
