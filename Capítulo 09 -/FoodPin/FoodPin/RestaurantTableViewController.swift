@@ -51,6 +51,8 @@ class RestaurantTableViewController: UITableViewController {
         
         let cellIdentifier = "datacell"
         
+        //Expliquei o significado do dequeueReusableCellmétodo no capítulo anterior. É flexível o suficiente para retornar qualquer tipo de célula da fila. Por padrão, ele retorna uma célula genérica de um UITableViewCelltipo.
+        //Para usar a RestaurantTableViewCell classe, é nossa responsabilidade "converter" o objeto retornado de dequeueReusableCell para RestaurantTableViewCell. Este processo de conversão é conhecido como downcasting . No Swift, usamos a as! palavra-chave para realizar uma conversão forçada.
         let dataSource = UITableViewDiffableDataSource<Section, String>(
             tableView: tableView,
             cellProvider: {  tableView, indexPath, restaurantName in
@@ -68,3 +70,12 @@ class RestaurantTableViewController: UITableViewController {
     }
 
 }
+
+
+
+//UITableViewController
+//UITableViewDiffableDataSource
+//NSDiffableDataSourceSnapshot
+//lazy var
+//enum Section
+
