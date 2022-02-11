@@ -1,4 +1,4 @@
-iOS Apps em Swift UIkit desenvolvidos a partir do Curso AppCoda Beginning - Created by Simon
+iOS Apps em Swift UIkit desenvolvidos a partir do Curso AppCoda Beginning - Created by Simon (www.appcoda.com/swift/)
 
 ### Versões utilizadas:
 
