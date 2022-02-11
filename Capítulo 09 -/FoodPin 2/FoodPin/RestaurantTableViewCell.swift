@@ -1,10 +1,3 @@
-//
-//  RestaurantTableViewCell.swift
-//  RestaurantTableViewCell
-//
-//  Created by Simon Ng on 13/8/2021.
-//
-
 import UIKit
 
 class RestaurantTableViewCell: UITableViewCell {

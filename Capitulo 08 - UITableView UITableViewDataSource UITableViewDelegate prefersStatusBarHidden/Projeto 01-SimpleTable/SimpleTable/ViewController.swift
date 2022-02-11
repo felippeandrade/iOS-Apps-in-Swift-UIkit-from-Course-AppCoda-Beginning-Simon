@@ -32,6 +32,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // O identificador datacell é aquele que definimos anteriormente no Interface Builder em Prototype Cell.
         let cellIdentifier = "datacell"
         //método dequeueReusableCell é usado para recuperar uma célula de tabela reutilizável da fila com o identificador de célula especificado.
+        //textLabel e imageView são propriedades da UITableViewCell classe padrão
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         
         // Configure the cell...

@@ -27,7 +27,7 @@ class RestaurantTableViewController: UITableViewController {
         
         //Atribua a fonte de dados diffable à sua visualização de tabela.
         tableView.dataSource = dataSource
-        
+                
         //Gere o estado atual dos dados da tabela criando um instantâneo
         //Through a snapshot, you set up the initial state of the data that displays in a view, and later update that data.
         //e, em seguida, criar um NSDiffableDataSourceSnapshot objeto para informar à visualização de tabela quais dados exibir.
@@ -53,11 +53,14 @@ class RestaurantTableViewController: UITableViewController {
         
         //Expliquei o significado do dequeueReusableCellmétodo no capítulo anterior. É flexível o suficiente para retornar qualquer tipo de célula da fila. Por padrão, ele retorna uma célula genérica de um UITableViewCelltipo.
         //Para usar a RestaurantTableViewCell classe, é nossa responsabilidade "converter" o objeto retornado de dequeueReusableCell para RestaurantTableViewCell. Este processo de conversão é conhecido como downcasting . No Swift, usamos a as! palavra-chave para realizar uma conversão forçada.
+        // Por padrão, ele retorna uma célula genérica de um UITableViewCell tipo.
+        //Para usar a RestaurantTableViewCellclasse, é nossa responsabilidade "converter" o objeto retornado de dequeueReusableCellpara RestaurantTableViewCell. Este processo de conversão é conhecido como downcasting . No Swift, usamos a as!palavra-chave para realizar uma conversão forçada.
         let dataSource = UITableViewDiffableDataSource<Section, String>(
             tableView: tableView,
             cellProvider: {  tableView, indexPath, restaurantName in
                 let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! RestaurantTableViewCell
-                            
+                      
+                //Como agora estamos usando nosso próprio RestaurantTableViewCell, precisamos usar as propriedades da classe personalizada: nameLabel,typeLabel,locationLabel,thumbnailImageView.
                 cell.nameLabel.text = restaurantName //self.restaurantNames[indexPath.row]
                 cell.typeLabel.text = self.restaurantTypes[indexPath.row]
                 cell.locationLabel.text = self.restaurantLocations[indexPath.row]
@@ -73,9 +76,5 @@ class RestaurantTableViewController: UITableViewController {
 
 
 
-//UITableViewController
-//UITableViewDiffableDataSource
-//NSDiffableDataSourceSnapshot
-//lazy var
-//enum Section
+
 

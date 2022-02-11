@@ -1,10 +1,3 @@
-//
-//  RestaurantTableViewController.swift
-//  RestaurantTableViewController
-//
-//  Created by Simon Ng on 12/8/2021.
-//
-
 import UIKit
 
 class RestaurantTableViewController: UITableViewController {
@@ -27,6 +20,8 @@ class RestaurantTableViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.dataSource = dataSource
+        //para remover o separador de células:
+       
         tableView.separatorStyle = .none
         
         var snapshot = NSDiffableDataSourceSnapshot<Section, String>()

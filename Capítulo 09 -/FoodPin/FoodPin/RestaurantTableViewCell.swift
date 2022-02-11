@@ -12,10 +12,17 @@ class RestaurantTableViewCell: UITableViewCell {
     @IBOutlet var locationLabel: UILabel!
     @IBOutlet var typeLabel: UILabel!
     @IBOutlet var thumbnailImageView: UIImageView! {
+        //quando uma visualização de imagem é atribuída, o didSet bloco de código será chamado para alterar o raio do canto e definir o clipsToBounds valor para true
         didSet {
             thumbnailImageView.layer.cornerRadius = 20.0
             thumbnailImageView.clipsToBounds = true
         }
+        //Para criar uma imagem circular, você pode alterar o trecho de código como este, que define o raio para metade da largura da visualização da imagem
+//        didSet {
+//            thumbnailImageView.layer.cornerRadius = thumbnailImageView.bounds.width / 2
+//            thumbnailImageView.clipsToBounds = true
+//        }
+        
     }
     
     override func awakeFromNib() {
@@ -30,3 +37,5 @@ class RestaurantTableViewCell: UITableViewCell {
     }
 
 }
+
+
