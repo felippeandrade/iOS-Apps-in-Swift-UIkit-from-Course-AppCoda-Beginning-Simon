@@ -1,37 +1,48 @@
 iOS Apps em Swift UIkit desenvolvidos a partir do Curso AppCoda Beginning - Created by Simon
 
-Swift 5.5.
+### Versões utilizadas:
 
-Xcode 13.
+- iOS 15
+- Swift 5.5
+- Xcode 13
 
-iOS 15.
+# Tópicos Abordados 
 
-### Capitulo 02
+### Capítulo 01
+- As Ferramentas de Desenvolvimento
+
+### Capítulo 02
 - UIView
 - UILabel
 - Dictionary
 
-### Capitulo 03
+### Capítulo 03
 - UIViewController 
 - UIButton 
 - UIAlertController
 
+### Capítulo 04
+- Explicação do aplicativo Hello World
+
 ### Capitulo 05
 - Auto Layout
 
-#Capitulo 06
+### Capítulo 06
 - Assets
 - Stack Views
 - Size Classes
 - Vector Data
 
-### Capitulo 08
+### Capítulo 07
+- Introdução à Prototipagem
+
+### Capítulo 08
 - UITableView 
 - UITableViewDataSource 
 - UITableViewDelegate 
 - prefersStatusBarHidden
 
-### Capítulo 09
+### Capítulo 09
 - backgroundColor
 - UITableViewController
 - UITableViewDiffableDataSource
@@ -44,5 +55,5 @@ iOS 15.
 - Dark Mode
 - tableView.separatorStyle
 
-### Capítulo 010
+### Capítulo 10
 - ...
