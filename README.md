@@ -1,6 +1,6 @@
 iOS Apps em Swift UIkit desenvolvidos a partir do Curso AppCoda Beginning - Created by Simon - www.appcoda.com/swift/
 
-### Tecnologias e Ferramentas usadas:
+### Tecnologias e Ferramentas usadas
 
 - iOS 15
 - Swift 5.5
